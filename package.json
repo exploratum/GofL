@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/exploratum/GofL/issues"
   },
-  "homepage": "https://github.com/exploratum/GofL#readme"
+  "homepage": "https://github.com/exploratum/GofL#readme",
+  "dependencies": {
+    "three": "^0.118.3"
+  }
 }

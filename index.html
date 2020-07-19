@@ -9,19 +9,21 @@
 
     <div class="container-game">
 
+        <div class='title'>THE GAME OF LIFE</div>
+
         <div class="initial-states">
-            <div class='preset1'>Preset 1</div>
-            <div class='preset2'>Preset 2</div>
-            <div class='preset3'>Preset 3</div>
-            <div class ='random'>Random</div>
+            <button class='preset1'>Preset 1</button>
+            <button class='preset2'>Preset 2</button>
+            <button class='preset3'>Preset 3</button>
+            <button class ='random'>Random</button>
         </div>
         
-        <div class="grid">
+        <div class="cells">
 
         </div>
 
         <div class="generation">
-
+            Generation: <span>1</span>
         </div>
 
         <div class="commands">
@@ -50,21 +52,32 @@
         </div>
 
         <div class="settings">
-            <label for="grid-size">Grid Size</label>
+
+            <label for="grid-size">Grid Size: </label>
             <select name="size" id="size">
                 <option value="25">25x25</option>
                 <option value="50">50x50</option>
                 <option value="75">75x75</option>
             </select>
 
-            <label for="speed">Speed</label>
+            <br>
+
+            <label for="speed">Speed: </label>
             <select name="speed" id="speed">
                 <option value=1x>1x</option>
                 <option value="2x">2x</option>
                 <option value="4x">4x</option>
             </select>
-        </div>
 
+            <br>
+
+            <label for="rotation">Rotation: </label>
+            <select name="rotation" id="rotation">
+                <option value="manual">Manual</option>
+                <option value="continuous">Continuous</option>
+            </select>
+
+        </div>
         
     </div>
     
