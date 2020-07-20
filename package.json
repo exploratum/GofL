@@ -23,6 +23,9 @@
     "js": "^0.1.0"
   },
   "devDependencies": {
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
     "parcel-bundler": "^1.12.4",
     "prettier": "^2.0.5"
   }
