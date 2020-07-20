@@ -1,0 +1,141 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/***********************************************/
+* {
+    box-sizing: border-box;
+}
+
+html {
+   width: 100%;
+   height: 100%;
+   font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-size: 1.5rem;
+}
+/*************************************************/
+
+.container-game {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: 1fr 8fr 1fr;
+
+    grid-template-areas:
+    "      .       title            .      "
+    "   presets    cells       generation  "
+    "      .       commands         .      "
+}
+
+.container-settings {
+    width: 30%;
+    border: 1px solid blue;
+    
+}
+
+.title {
+    border: 1px solid blue;
+    grid-area: title;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+
+.initial-states {
+    grid-area: presets;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid green;
+}
+
+.initial-states > button {
+    margin: 0 2px 0 2px;
+}
+
+.cells {
+    grid-area: cells;
+    border: 1px solid red;
+}
+
+.generation {
+    grid-area: generation;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid orange;
+}
+
+.commands {
+    grid-area: commands;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.commands > button {
+    margin: 1.5rem;
+}
+
+.about {
+    font-size: 4rem;
+    text-align: center;
+    border: 1px solid blue;
+    margin-bottom: 50px;
+}
+
+.settings {
+     border: 1px solid red;
+
+}
